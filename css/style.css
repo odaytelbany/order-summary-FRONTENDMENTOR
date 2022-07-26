@@ -34,21 +34,25 @@ img {
     width: 100%;
     height: 100%;
     z-index: -1;
+    top: 0;
+    left: 0;
 }
 
 .card {
-    margin: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
     /* padding: 20px; */
     background-color: white;
     border-radius: 20px;
     box-shadow: 3px 3px 3px hsl(228, 45%, 44%, 0.15);
     width: 450px;
     overflow: hidden;
-    margin-top: 40px;
 }
 
 .card h1 {
     color: var(--Dark-blue);
+    margin-top: 20px;
 }
 
 .card p {
@@ -99,6 +103,7 @@ img {
     width: 90%;
     border-radius: 5px;
     padding: 10px 20px;
+    transition: 0.3s;
 }
 
 .card .agree {
@@ -117,5 +122,7 @@ img {
     margin-bottom: 20px;
     text-decoration: none;
     color: var(--Desaturated-blue);
+}
+.card .cancel:hover{
     background-color: var(--Very-pale-blue);
 }
